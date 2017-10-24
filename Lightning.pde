@@ -14,13 +14,13 @@ void setup()
 
 void draw()
 {
- 
+ // creates barn
  fill(255,0,29);
  rect(75,200,200,150);
 fill(255,0,29);
 triangle(75,200,175,100,275,200);
 
- 
+ // create lightning bolt
 stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
  while ( endx < 350) {
   endx = (int)startx + (int)(Math.random() * 9); 
@@ -39,7 +39,7 @@ starty=endy;
 
 }
 
-
+// draws new lightning bolt
 void mousePressed()
 {
 int startx = 0;
